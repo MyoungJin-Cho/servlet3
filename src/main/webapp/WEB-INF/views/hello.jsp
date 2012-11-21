@@ -11,11 +11,18 @@
 		enctype="multipart/form-data">
 		<input type="file" name="file" /> <input type="submit" />
 	</form>
-	
+
 	<hr />
 	<h2>Servlets</h2>
-	<a href="<c:url value="/servlet1"/>">Servlet1</a><br/>
-	<a href="<c:url value="/servlet2"/>">Servlet2</a><br/>
-	<a href="<c:url value="/async"/>">Slow servlet</a><br/>
+	<a href="<c:url value="/servlet1"/>">Servlet1</a>
+	<br />
+	<a href="<c:url value="/servlet2"/>">Servlet2</a>
+	<br />
+	<a href="<c:url value="/async"/>">Slow servlet</a>
+	<br />
+	<form method="post" action="<c:url value="/async"/>">
+		<input type="number" placeholder="bid" name="price" /> <input
+			type="submit" value="Submit" />
+	</form>
 </body>
 </html>

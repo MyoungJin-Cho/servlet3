@@ -21,11 +21,7 @@ public class Servlet2 extends HttpServlet {
     private static final long serialVersionUID = 3812941682605624821L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        if (request.getParameter("date") == null) {
-            response.getWriter().println("Current time is: " + new Date());
-        } else {
-            response.getWriter().println("Servlet has been invoked at: " + request.getParameter("date"));
-        }
+        response.getWriter().println("Current time is: " + new Date());
     }
 
 }
