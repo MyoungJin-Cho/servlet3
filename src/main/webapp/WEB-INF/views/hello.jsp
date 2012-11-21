@@ -5,8 +5,7 @@
 <title>Servlet3 Main</title>
 </head>
 <body>
-	
-	<h1>Please upload a pdf</h1>
+	<h1>${applicationScope.message}</h1>
 	<c:out value="${error}" />
 	<form method="post" action="<c:url value="/hello/upload"/>"
 		enctype="multipart/form-data">
