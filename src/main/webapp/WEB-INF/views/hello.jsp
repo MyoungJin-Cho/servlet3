@@ -15,6 +15,7 @@
 	<hr />
 	<h2>Servlets</h2>
 	<a href="<c:url value="/servlet1"/>">Servlet1</a><br/>
-	<a href="<c:url value="/servlet2"/>">Servlet2</a>
+	<a href="<c:url value="/servlet2"/>">Servlet2</a><br/>
+	<a href="<c:url value="/async"/>">Slow servlet</a><br/>
 </body>
 </html>
